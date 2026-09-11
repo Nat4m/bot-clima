@@ -1,7 +1,7 @@
 import requests
 from APITempoV2 import verificar_clima
 
-TOKEN = "8883160131:AAGD2HcviK3AccKjVAaAhpYvRZD0CMxoHo8"
+TOKEN = os.environ["TELEGRAM_TOKEN"]
 URL = f"https://api.telegram.org/bot{TOKEN}"
 
 def send_Message(text):
